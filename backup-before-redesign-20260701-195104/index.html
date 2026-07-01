@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>赖竣泓 | AI 训练师作品档案</title>
+  <meta name="description" content="赖竣泓的 AI 训练师个人网站，展示提示词工程、数据标注规范、模型评测、Agent 与项目成果。">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="回到首页">
+      <span class="brand-mark">LJH</span>
+      <span>赖竣泓</span>
+    </a>
+    <nav class="nav-links" aria-label="主导航">
+      <a href="#profile">档案</a>
+      <a href="#knowledge">知识库</a>
+      <a href="#work">成果</a>
+      <a href="#contact">联系</a>
+    </nav>
+    <button class="search-button" id="openSearch" type="button">搜索</button>
+  </header>
+
+  <main id="top">
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">AI Trainer Portfolio / 2026</p>
+        <h1 id="hero-title">赖竣泓的 AI 训练师能力档案</h1>
+        <p class="hero-lead">
+          聚焦提示词工程、数据标注规范、模型评测与 Agent 工作流，用结构化笔记和可交互作品呈现 AI 训练师的核心能力。
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#knowledge">浏览知识成果</a>
+          <a class="button secondary" href="#tetris">查看网页作品</a>
+          <button class="button secondary" id="singingBtn" type="button">兴趣：唱歌</button>
+        </div>
+      </div>
+
+      <div class="hero-media" aria-label="个人照片展示区">
+        <div class="portrait-stage">
+          <div class="portrait-placeholder">
+            <span>赖竣泓</span>
+            <strong>AI TRAINER</strong>
+          </div>
+          <div class="portrait-caption">
+            <span>个人照片待替换</span>
+            <span>建议：半身照 / 舞台照 / 侧脸氛围照</span>
+          </div>
+        </div>
+        <div class="hero-index">
+          <span>01</span>
+          <span>Prompt</span>
+          <span>Annotation</span>
+          <span>Evaluation</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="能力关键词">
+      <span>数据构造</span>
+      <span>Prompt-Response</span>
+      <span>QA 对</span>
+      <span>模型评测</span>
+      <span>Agent = LLM + 工具调用</span>
+      <span>API 三要素</span>
+      <span>标注规则文档</span>
+    </section>
+
+    <section class="section-grid" id="profile" aria-labelledby="profile-title">
+      <div class="section-heading">
+        <p class="eyebrow">Profile</p>
+        <h2 id="profile-title">面向 AI 训练师岗位的个人介绍</h2>
+      </div>
+      <div class="profile-panel">
+        <p>
+          我关注大模型从“能回答”到“答得准、答得稳、答得符合业务目标”的全过程。现阶段主要积累在提示词设计、数据样本构造、标注规则拆解、模型输出评测和工具化工作流上。
+        </p>
+        <dl class="profile-list">
+          <div><dt>姓名</dt><dd>赖竣泓 / 男</dd></div>
+          <div><dt>方向</dt><dd>AI 训练师、Prompt Engineer、模型评测与数据标注</dd></div>
+          <div><dt>工具</dt><dd>VS Code、Obsidian、DeepSeek API、Agent 类工具</dd></div>
+          <div><dt>联系方式</dt><dd>1711529766@qq.com / 微信 19817800663</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="capability-strip" aria-label="核心能力指标">
+      <article>
+        <span>60%</span>
+        <h3>数据构造</h3>
+        <p>根据 Obsidian 课堂笔记整理：AI 训练师最核心的工作是构造优质学习资料，包括 PR 数据对、上下文、多模态标签和清洗规则。</p>
+      </article>
+      <article>
+        <span>20%</span>
+        <h3>模型评测</h3>
+        <p>用刁钻问题和真实场景测试模型，记录错误、缺陷与改进建议，再反馈给产品和算法侧。</p>
+      </article>
+      <article>
+        <span>10%</span>
+        <h3>项目协作</h3>
+        <p>理解产品需求，输出规则文档、标注规范、POC 验证思路，并推动标注流程落地。</p>
+      </article>
+      <article>
+        <span>10%</span>
+        <h3>工具平台</h3>
+        <p>使用 IDE、API、Agent 搭建工具链，让数据收集、识别、命名和评测流程更高效。</p>
+      </article>
+    </section>
+
+    <section class="section-grid" id="knowledge" aria-labelledby="knowledge-title">
+      <div class="section-heading">
+        <p class="eyebrow">Obsidian Notes</p>
+        <h2 id="knowledge-title">从原始笔记提炼的行业知识</h2>
+      </div>
+      <div class="knowledge-tools">
+        <label class="filter-label" for="knowledgeSearch">搜索知识卡片</label>
+        <input id="knowledgeSearch" type="search" placeholder="输入 Prompt、Agent、标注、API...">
+      </div>
+      <div class="knowledge-grid" id="knowledgeGrid">
+        <article class="knowledge-card" data-keywords="ai训练师 数据构造 prompt response">
+          <span>01 / 数据</span>
+          <h3>AI 训练师不是“只写代码训练模型”</h3>
+          <p>训练师更像给 AI 准备教材的人：整理文本、图片、视频、语音等学习材料，用数据质量影响模型生成效果。</p>
+        </article>
+        <article class="knowledge-card" data-keywords="prompt qa context 上下文">
+          <span>02 / Prompt</span>
+          <h3>PR、QA 与上下文是基础数据结构</h3>
+          <p>一条 PR 数据由 prompt 和 response 组成；QA 对用于问答任务；上下文决定多轮对话里的角色、语气和约束。</p>
+        </article>
+        <article class="knowledge-card" data-keywords="agent llm 工具调用">
+          <span>03 / Agent</span>
+          <h3>Agent = LLM + 工具调用</h3>
+          <p>大模型负责思考，工具调用负责执行。Agent 的价值在于把“想法”变成“操作”，能规划任务、调用软件并完成复杂流程。</p>
+        </article>
+        <article class="knowledge-card" data-keywords="模型评测 测试 优化">
+          <span>04 / Evaluation</span>
+          <h3>评测不是打分，而是找改进路径</h3>
+          <p>评测需要设计真实问题、边界问题和反常问题，记录模型答错、答偏、答不稳的原因，并形成可执行的优化建议。</p>
+        </article>
+        <article class="knowledge-card" data-keywords="标注 规则文档 query">
+          <span>05 / Annotation</span>
+          <h3>标注方案要讲清“标什么、怎么判”</h3>
+          <p>标注规则至少包含标注内容、query 理解、case 示例和备注口径，确保不同标注者对同一条数据有一致判断。</p>
+        </article>
+        <article class="knowledge-card" data-keywords="api endpoint key model deepseek">
+          <span>06 / API</span>
+          <h3>API 调用三要素：地址、密钥、模型</h3>
+          <p>Endpoint 决定请求去哪，API Key 决定权限，model 决定调用哪个能力。理解这三点，就能把 AI 接入工具链。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="media-section" aria-labelledby="media-title">
+      <div class="section-heading">
+        <p class="eyebrow">Visual Archive</p>
+        <h2 id="media-title">AI 训练师学习成果视觉稿</h2>
+      </div>
+      <div class="media-grid">
+        <figure class="media-card large">
+          <img src="assets/ai-trainer-cover.png" alt="AI训练师主题封面图">
+          <figcaption>从岗位定位到核心卖点的内容封面</figcaption>
+        </figure>
+        <figure class="media-card">
+          <img src="assets/ai-trainer-myth.png" alt="AI训练师误区澄清图">
+          <figcaption>训练师不等于算法工程师</figcaption>
+        </figure>
+        <figure class="media-card">
+          <img src="assets/ai-trainer-duties.png" alt="AI训练师四大职责图">
+          <figcaption>数据、评测、项目、工具四类职责</figcaption>
+        </figure>
+        <figure class="media-card">
+          <img src="assets/week-one-map.png" alt="第一周AI训练师学习脑图">
+          <figcaption>第一周学习脑图</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section-grid" id="work" aria-labelledby="work-title">
+      <div class="section-heading">
+        <p class="eyebrow">Selected Work</p>
+        <h2 id="work-title">项目成果展示</h2>
+      </div>
+      <div class="work-list">
+        <article class="work-item">
+          <div>
+            <span>Project 01</span>
+            <h3>俄罗斯方块网页作品</h3>
+            <p>一个可直接游玩的 Canvas 小游戏，展示基础前端交互、状态管理和键盘事件处理能力。</p>
+          </div>
+          <a class="button secondary" href="#tetris">进入体验</a>
+        </article>
+        <article class="work-item">
+          <div>
+            <span>Project 02</span>
+            <h3>植物图片识别与命名流程</h3>
+            <p>基于课堂项目思路：批量下载图片、调用 AI 识别、自动命名，将手工 30 秒/张的流程压缩成批处理。</p>
+          </div>
+          <a class="button secondary" href="#knowledge">查看方法</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="tetris-section" id="tetris" aria-labelledby="tetris-title">
+      <div class="section-heading">
+        <p class="eyebrow">Playable Demo</p>
+        <h2 id="tetris-title">内嵌俄罗斯方块</h2>
+      </div>
+      <div class="tetris-frame">
+        <iframe src="tetris.html" title="俄罗斯方块小游戏"></iframe>
+      </div>
+    </section>
+
+    <section class="hobby-section" id="hobby" aria-labelledby="hobby-title">
+      <div>
+        <p class="eyebrow">Interest</p>
+        <h2 id="hobby-title">兴趣爱好：唱歌</h2>
+        <p>
+          唱歌会被放在个人网站里作为“非技术侧人格展示”：让面试官看到你不只是会整理数据，也有表达、节奏感和内容感。视频素材给到后，这里会替换为你的演唱视频。
+        </p>
+      </div>
+      <div class="video-placeholder">
+        <span>Video Slot</span>
+        <strong>唱歌视频待放入</strong>
+        <p>建议格式：MP4 / 16:9 或竖屏舞台片段</p>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-title">联系赖竣泓</h2>
+      </div>
+      <div class="contact-grid">
+        <a href="mailto:1711529766@qq.com">
+          <span>Email</span>
+          <strong>1711529766@qq.com</strong>
+        </a>
+        <div>
+          <span>WeChat</span>
+          <strong>19817800663</strong>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="search-modal" id="searchModal" hidden>
+    <div class="search-panel" role="dialog" aria-modal="true" aria-labelledby="searchTitle">
+      <button class="close-button" id="closeSearch" type="button" aria-label="关闭搜索">×</button>
+      <h2 id="searchTitle">快速定位内容</h2>
+      <p>输入关键词后，我会帮你高亮知识卡片。适合面试前快速讲解自己的学习结构。</p>
+      <input id="modalSearchInput" type="search" placeholder="例如：模型评测、Agent、标注规则">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>赖竣泓 | AI 训练师个人网站</title>
+  <meta name="description" content="赖竣泓的 AI 训练师个人网站，展示提示词工程、数据标注规范、模型评测、Agent 学习成果与网页作品。">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="回到首页">
+      <span class="brand-mark">LJH</span>
+      <span>赖竣泓</span>
+    </a>
+    <nav class="nav-links" aria-label="主导航">
+      <a href="#profile">个人介绍</a>
+      <a href="#skills">能力结构</a>
+      <a href="#knowledge">知识成果</a>
+      <a href="#work">作品</a>
+      <a href="#contact">联系</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">AI Trainer / Prompt / Evaluation</p>
+        <h1>用结构化数据和评测思维训练 AI。</h1>
+        <p class="lead">我是赖竣泓，关注提示词工程、数据标注规范、模型评测与 Agent 工作流。这个网站用于集中展示我的 AI 训练师学习成果、行业理解和可交互作品。</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#knowledge">查看知识成果</a>
+          <a class="button" href="#tetris">体验俄罗斯方块</a>
+        </div>
+      </div>
+      <aside class="hero-card" aria-label="个人照片区域">
+        <div class="portrait-box">
+          <div class="portrait-initial">赖</div>
+          <div>
+            <span>Personal Photo Slot</span>
+            <strong>个人照片待替换</strong>
+          </div>
+        </div>
+        <ul class="hero-facts">
+          <li><span>姓名</span><strong>赖竣泓 / 男</strong></li>
+          <li><span>方向</span><strong>AI 训练师</strong></li>
+          <li><span>关键词</span><strong>Prompt、标注、评测、Agent</strong></li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="intro-strip" id="profile">
+      <div>
+        <p class="eyebrow dark">Profile</p>
+        <h2>个人介绍</h2>
+      </div>
+      <p>我把 AI 训练师理解为连接“业务目标、优质数据、模型表现”的角色。工作重点不是堆概念，而是把需求拆成可执行的数据标准、评测问题、Prompt 样例和改进建议。当前网站是一个持续更新的作品档案，后续会继续加入真实项目、照片、视频和更多笔记。</p>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-title">
+        <p class="eyebrow dark">Capability</p>
+        <h2>能力结构</h2>
+      </div>
+      <div class="skill-grid">
+        <article>
+          <span>01</span>
+          <h3>提示词工程</h3>
+          <p>围绕任务目标、上下文、角色、约束和输出格式设计 Prompt，让模型回答更稳定、更可评测。</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>数据标注规范</h3>
+          <p>将标注内容、query 理解、case 示例和备注口径写成规则，降低多人标注时的理解偏差。</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>模型评测</h3>
+          <p>通过真实问题、边界问题和反常问题测试模型，记录错误类型并整理优化方向。</p>
+        </article>
+        <article>
+          <span>04</span>
+          <h3>Agent 工作流</h3>
+          <p>理解 Agent = LLM + 工具调用，能把模型能力接入文件、网页、API 与本地工作流。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section knowledge" id="knowledge">
+      <div class="section-title with-tool">
+        <div>
+          <p class="eyebrow dark">Obsidian Notes</p>
+          <h2>知识成果</h2>
+        </div>
+        <label class="inline-search">
+          <span>筛选</span>
+          <input id="knowledgeSearch" type="search" placeholder="输入 Agent / 标注 / API">
+        </label>
+      </div>
+      <div class="knowledge-grid">
+        <article class="knowledge-card" data-keywords="AI训练师 数据构造 prompt response">
+          <span>数据构造</span>
+          <h3>训练师是在准备 AI 的学习资料</h3>
+          <p>从 Obsidian 笔记提炼：AI 训练师的核心是构造优质数据，包括 PR 数据对、QA 对、多轮上下文和多模态标签。</p>
+        </article>
+        <article class="knowledge-card" data-keywords="Prompt QA Context 上下文">
+          <span>Prompt</span>
+          <h3>PR、QA、上下文是基本数据结构</h3>
+          <p>Prompt-Response 适合任务样本，QA 适合问答场景，上下文决定多轮对话中的角色、语气和约束。</p>
+        </article>
+        <article class="knowledge-card" data-keywords="Agent LLM 工具调用">
+          <span>Agent</span>
+          <h3>Agent = LLM + 工具调用</h3>
+          <p>大模型负责思考，工具负责执行。Agent 的关键价值是把“输出文本”推进到“完成任务”。</p>
+        </article>
+        <article class="knowledge-card" data-keywords="模型评测 评估 优化">
+          <span>Evaluation</span>
+          <h3>评测要产出改进路径</h3>
+          <p>好的评测不是只判断对错，而是记录答错、答偏、答不稳的原因，并形成可复用的测试集。</p>
+        </article>
+        <article class="knowledge-card" data-keywords="标注 规则文档 query">
+          <span>Annotation</span>
+          <h3>标注规范要降低主观差异</h3>
+          <p>标注规则需要明确“标什么、怎么判、边界怎么处理”，并配足正反案例。</p>
+        </article>
+        <article class="knowledge-card" data-keywords="API endpoint key model DeepSeek">
+          <span>API</span>
+          <h3>API 三要素：地址、密钥、模型</h3>
+          <p>Endpoint 决定请求位置，API Key 决定权限，model 决定调用能力。理解这三点后才能把 AI 接入工具链。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section visual-archive">
+      <div class="section-title">
+        <p class="eyebrow dark">Visual Archive</p>
+        <h2>学习成果图集</h2>
+      </div>
+      <div class="visual-grid">
+        <figure>
+          <img src="assets/ai-trainer-cover.png" alt="AI训练师封面图">
+          <figcaption>AI 训练师岗位理解封面</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/ai-trainer-duties.png" alt="AI训练师职责图">
+          <figcaption>核心职责拆解</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/week-one-map.png" alt="第一周学习脑图">
+          <figcaption>第一周学习脑图</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="section-title">
+        <p class="eyebrow dark">Selected Work</p>
+        <h2>作品展示</h2>
+      </div>
+      <div class="work-grid">
+        <article class="work-card">
+          <span>Project 01</span>
+          <h3>俄罗斯方块网页作品</h3>
+          <p>使用 Canvas 实现的可交互小游戏，包含方块生成、碰撞检测、消行、计分和键盘控制。</p>
+          <a class="text-link" href="#tetris">查看内嵌作品</a>
+        </article>
+        <article class="work-card">
+          <span>Project 02</span>
+          <h3>植物图片识别与命名流程</h3>
+          <p>基于课堂项目思路：批量下载图片、AI 识图、自动重命名，用流程化方法提升数据处理效率。</p>
+          <a class="text-link" href="#knowledge">查看相关方法</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section tetris-section" id="tetris">
+      <div class="section-title compact">
+        <p class="eyebrow dark">Playable Demo</p>
+        <h2>俄罗斯方块</h2>
+        <p>这是之前完成的网页作品，已直接嵌入本页面。</p>
+      </div>
+      <div class="tetris-frame">
+        <iframe src="tetris.html" title="俄罗斯方块小游戏"></iframe>
+      </div>
+    </section>
+
+    <section class="section hobby-section" id="hobby">
+      <div class="section-title compact">
+        <p class="eyebrow dark">Interest</p>
+        <h2>兴趣爱好：唱歌</h2>
+        <p>这一块用于展示个人表达能力和镜头表现。你提供视频后，我会把这里替换成正式播放器。</p>
+      </div>
+      <div class="video-slot">
+        <span>Video Slot</span>
+        <strong>唱歌视频待加入</strong>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>联系我</h2>
+      </div>
+      <div class="contact-list">
+        <a href="mailto:1711529766@qq.com"><span>Email</span><strong>1711529766@qq.com</strong></a>
+        <div><span>WeChat</span><strong>19817800663</strong></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
